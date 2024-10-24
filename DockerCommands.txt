@@ -1,0 +1,58 @@
+dockerfile needs to be in the correct path or in the same path where the below command is run for creating an image.
+
+docker build .
+
+to view all the docker image , use below command
+
+docker image ls
+
+to check docker process status
+
+docker ps 
+
+to stop a particular docker process
+
+docker stop name
+
+to stop all docker process
+
+docker stop
+
+to run a specific docker image id
+
+docker run id 
+
+to run a particular image on a particular port number
+
+docker run -p 3000:3000 id 
+
+for deattach mode
+
+docker run -d -p 3000:3000 id
+
+to return list of container ID with all image
+
+docker ps -a 
+
+to remove docker images from the list
+
+docker rm name1 name2
+
+to run container and once its stopped it will also remove the container
+
+docker run -d --rm -p 3000:3000 id
+
+to name a docker image while initiating to run
+
+docker run -d -rm --name "mywebapp" -p 3000:3000 id
+
+to stop a docker process or a particular process
+
+docker stop
+
+docker stop name
+
+to give a name to a particular image while creating or version or updating a image
+
+docker build -t mywebapp:01
+
